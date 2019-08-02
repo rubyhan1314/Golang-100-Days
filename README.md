@@ -258,7 +258,7 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 
 ### Day16~20 - [Go语言基础进阶](./Day16-20(Go语言基础进阶))
 
-#### Day16 - [I/O操作](./goon.md)
+#### Day16 - [I/O操作](./Day16-20(Go语言基础进阶)/day16_file操作.md)
 - I / O  - 什么是I/O / os包的使用
 
 - 文件操作 - 获取文件信息 / 文件创建 / 打开文件 / 权限 / 删除文件
@@ -291,14 +291,34 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 #### Day28~30 - [JavaScript](./goon.md)
 #### Day31 - [jQuery](./goon.md)
 
-### Day32~35 - [Go Web开发](./Day32-35(Go Web开发))
+### Day32~35 - [GoWeb开发](./Day36-37(beego框架))
 #### Day32 - [Web初识](./goon.md)
 #### Day33 - [http包详解](./goon.md)
 #### Day34 - [session和cookie](./goon.md)
 #### Day35 - [文本处理](./goon.md)
 
 
-### Day36~37 - [beego框架](./Day36-37(beego框架))
+### Day36~37 - [beego框架](./Day36-37(beego框架)))
+
+#### Day36 - [beego框架介绍和流程分析](./Day36-37(beego框架)/day36_beego框架介绍和流程分析.md)
+
+- beego框架 - beego简介 / beego安装 / beego特性
+- bee工具 -  bee简介/ bee安装
+- bee的用法 - bee命令
+- beego程序流程分析 - beego程序入口 / go语言执行顺
+- beego框架功能 - 请求拦截 / 路由分发 
+- beego控制器 - 处理逻辑
+- beego.Run方法 - 解析配置 / 路由分发 / 监听服务
+
+#### Day37 - [beego框架总结和数据库连接配置](./Day36-37(beego框架)/day37_beego框架总结及数据库连接配置.md)
+
+- conf配置 - 项目数据配置 / 配置数据读取
+- controllers -  控制器介绍 / 控制器功能 / 控制器定义
+- models- 数据层作用 / model定义
+- routers - 路由层功能 / 路由分类
+- 静态资源 - 静态资源目录作用 / 静态资源路径设置 
+- 数据库安装及配置 - mysql数据库安装 / mysql数据库基本命令 / 可视化工具 
+- 数据库驱动 - 数据库驱动分类 / mysql驱动安装 / 连接配置 / 连接数据库 
 
 ### Day38~41 - [项目实战一](./Day38-41(项目实战一))
 
