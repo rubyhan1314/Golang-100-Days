@@ -1,0 +1,152 @@
+
+#main{
+    /*background-color: #8bc34a;*/
+    margin: 100px 50px 50px 50px;
+
+}
+.error{
+    color: red;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #666;
+}
+body{
+    margin: 0px;
+}
+
+
+.global-color{
+    color: #72BCB5;
+}
+
+/*导航-------------------------------------------------------------------------------------------------------*/
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #72BCB5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+#nav li{
+    display: inline-block;
+    margin: 10px 2px;
+}
+#nav ul{
+    padding: 0px;
+}
+#nav a{
+    padding: 10px;
+    font-size: 24px;
+}
+#nav-write-article{
+    margin-left: 20px;
+}
+#nav-login{
+    margin-right: 20px;
+}
+
+
+/*首页 block-------------------------------------------------------------------------------------------------------*/
+#home-block-item>h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+#home-block-item>p{
+    margin: 5px 0px;
+}
+.home-block-item-udpate{
+    text-align: right;
+}
+.home-block-item-udpate>a{
+    background-color: #72BCB5;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/*首页 footer-------------------------------------------------------------------------------------------------------*/
+#home-footer{
+    text-align: center;
+    margin: 50px 0px 80px 0px;
+}
+.disable{
+    color: #888;
+}
+
+/*写入文章-------------------------------------------------------------------------------------------------------*/
+#write-art-form{
+}
+
+#write-art-form>input,#write-art-form>textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+#write-art-form>textarea{
+    display: inline-block;
+}
+
+#content{
+    height: 400px;
+}
+
+#write-art-form>div{
+    margin: 10px 0px;
+}
+
+/*标签列表------------------------------------------------------------------------------------------------------*/
+
+#tags-list>div{
+    margin: 10px 0px;
+}
+#tags-list a{
+    font-size: 20px;
+}
+
+/*相册------------------------------------------------------------------------------------------------------*/
+
+#album-box{
+    margin: 0px auto;
+    width: 844px;
+    height: 1000px;
+    font-size: 0px;
+}
+.album-item{
+    border: 1px solid #72BCB5;
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    margin: 10px 10px;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+/*关于我--------------*/
+#aboutme{
+    margin: 60px auto;
+    width: 900px;
+    height: 640px;
+    font-size: 0px;
+    /*position: relative;*/
+}
+
+
+#myt{
+    display: inline-block;
+    position: absolute;
+    left: 800px;
+    top: 360px;
+}
+.myp{
+    color: #333333;
+    font-size: 30px;
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+</head>
+<body>
+{{template "block/nav.html" .}}
+
+<div id="main">
+{{.Content}}
+
+{{if .HasFooter}}
+    <div id="home-footer">
+        <a {{if .PageCode.HasPre}}href="{{.PageCode.PreLink}}" {{else}} class="disable" {{end}}>上一页</a>
+        <span>{{.PageCode.ShowPage}}页</span>
+        <a {{if .PageCode.HasNext}}href="{{.PageCode.NextLink}}" {{else}} class="disable" {{end}}>下一页</a>
+    </div>
+{{end}}
+
+
+</div>
+
+</body>
+</html>

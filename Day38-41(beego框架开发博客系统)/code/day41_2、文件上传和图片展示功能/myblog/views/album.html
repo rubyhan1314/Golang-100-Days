@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+
+    <script src="../static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/lib/jquery.url.js"></script>
+    <script src="../static/js/blog.js"></script>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+</head>
+<body>
+{{template "block/nav.html" .}}
+<div id="main">
+
+    <div id="album-box">
+    {{range .Album}}
+        <div class="album-item" style='background-image: url("{{.Filepath}}");'></div>
+    {{end}}
+    </div>
+
+    <form method="post">
+        <input type="file" id="album-upload-file" name="upload">
+        <input type="button" id="album-upload-button" value="提交文件">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+    <link href="../static/css/lib/highlight.css" rel="stylesheet">
+</head>
+<body>
+
+{{template "block/nav.html" .}}
+
+<div id="aboutme">
+    <div>
+        <img src="http://7xtcwd.com1.z0.glb.clouddn.com/wechat_avator.png">
+
+        <div id="myt">
+            <p class="myp">
+                <a href="http://{{.wechat}}">{{.wechat}}</a>
+            </p>
+            <p class="myp">
+                <a href="http://{{.qq}}">{{.qq}}</a>
+            </p>
+            <p class="myp">
+                <a href="http://{{.tel}}">{{.tel}}</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

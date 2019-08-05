@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写文章</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+    <script src="../static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/lib/jquery.url.js"></script>
+    <script src="../static/js/blog.js"></script>
+</head>
+<body>
+
+{{template "block/nav.html" .}}
+
+<div id="main">
+    <form id="write-art-form" method="post">
+        <div>标题</div>
+        <input type="text" placeholder="请输入标题" name="title" value="{{.Title}}">
+        <div>标签</div>
+        <input type="text" placeholder="请输入标签" name="tags" value="{{.Tags}}">
+        <div>简介</div>
+        <textarea placeholder="请输入简介" name="short">{{.Short}}</textarea>
+        <div>内容</div>
+        <textarea id="content" placeholder="请输入内容" name="content">{{.Content}}</textarea>
+        <input id="write-article-id" hidden name="id" value="{{.Id}}">
+        <button type="button" onclick="history.back()">返回</button>
+        <button type="submit" id="write-art-submit">提交</button>
+    </form>
+</div>
+
+</body>
+</html>

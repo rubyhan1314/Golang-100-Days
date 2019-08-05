@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/lib/login.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/blogsheet.css">
+    <script src="../static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/lib/jquery.url.js"></script>
+    <script src="../static/js/blog.js"></script>
+</head>
+<body>
+<!--
+<div id="nav">
+    <div id="nav-login">
+        <ul>
+            <li><a href="/login">登录</a></li>
+            <li><a href="/register">注册</a></li>
+
+        </ul>
+
+    </div>
+</div>
+-->
+
+{{template "block/nav.html"}}
+
+<div class="htmleaf-container">
+    <div class="wrapper">
+    {{/*注册表单*/}}
+        <div class="container">
+            <h1>Welcome</h1>
+            <form id="register-form" class="form" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password" id="register-password">
+                <input type="password" name="repassword" placeholder="rePassword">
+                <br>
+                <button type="submit" id="login-button">Register</button>
+            </form>
+        </div>
+
+    {{/*背景动画*/}}
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

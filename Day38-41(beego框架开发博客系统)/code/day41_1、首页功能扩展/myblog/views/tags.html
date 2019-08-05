@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+</head>
+<body>
+{{template "block/nav.html" .}}
+<div id="main">
+    <h1>标签</h1>
+    <div id="tags-list">
+    {{range $k,$v := .Tags}}
+        <div><a href="/?tag={{$k}}"><span class="global-color">{{$k}}</span> 有{{$v}}篇文章</a></div>{{end}}
+    </div>
+</div>
+</body>
+</html>
