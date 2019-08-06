@@ -1,6 +1,7 @@
 # 一、字符串(string)
 
 > @author：韩茹
+> 
 > 版权所有：北京千锋互联科技有限公司
 
 ## 1.1 什么是string
@@ -66,6 +67,10 @@ H e l l o   W o r l d
 
 千锋Go语言的学习群：784190273
 
+作者B站：
+
+https://space.bilibili.com/353694001
+
 对应视频地址：
 
 https://www.bilibili.com/video/av56018934
@@ -75,9 +80,5 @@ https://www.bilibili.com/video/av47467197
 源代码：
 
 https://github.com/rubyhan1314/go_foundation
-
-
-
-
 
 

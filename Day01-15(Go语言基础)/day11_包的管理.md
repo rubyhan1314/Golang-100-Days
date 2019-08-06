@@ -1,6 +1,7 @@
 # Go语言中包的使用
 
 > @author：韩茹
+> 
 > 版权所有：北京千锋互联科技有限公司
 
 
@@ -310,12 +311,19 @@ localhost:~ ruby$ go get github.com/go-sql-driver/mysql
 
 千锋Go语言的学习群：784190273
 
-视频地址：
+作者B站：
 
-https://www.bilibili.com/video/av56860636/
+https://space.bilibili.com/353694001
 
-https://www.bilibili.com/video/av56945376
+对应视频地址：
+
+https://www.bilibili.com/video/av56018934
+
+https://www.bilibili.com/video/av47467197
 
 源代码：
 
 https://github.com/rubyhan1314/go_advanced
+
+
+

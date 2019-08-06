@@ -1,6 +1,7 @@
-#一、切片(Slice)
+# 一、切片(Slice)
 
 > @author：韩茹
+> 
 > 版权所有：北京千锋互联科技有限公司
 
 ## 1.1 什么是切片
@@ -260,7 +261,7 @@ len=2 cap=9 slice=[0 1]
 len=3 cap=7 slice=[2 3 4]
 ```
 
-##1.5 append() 和 copy() 函数 
+## 1.5 append() 和 copy() 函数 
 
 append 向slice里面追加一个或者多个元素，然后返回一个和slice一样类型的slice
 copy 函数copy从源slice的src中复制元素到目标dst，并且返回复制的元素的个数
@@ -320,6 +321,10 @@ len=5 cap=12 slice=[0 1 2 3 4]
 
 
 千锋Go语言的学习群：784190273
+
+作者B站：
+
+https://space.bilibili.com/353694001
 
 对应视频地址：
 

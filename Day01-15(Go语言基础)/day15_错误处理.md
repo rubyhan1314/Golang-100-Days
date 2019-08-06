@@ -1,6 +1,7 @@
 # 错误处理
 
 > @author：韩茹
+>
 > 版权所有：北京千锋互联科技有限公司
 
 在实际工程项目中，我们希望通过程序的错误信息快速定位问题，但是又不喜欢错误处理代码写的冗余而又啰嗦。`Go`语言没有提供像`Java`、`C#`语言中的`try...catch`异常处理方式，而是通过函数返回值逐层往上抛。这种设计，鼓励工程师在代码中显式的检查错误，而非忽略错误，好处就是避免漏掉本应处理的错误。但是带来一个弊端，让代码啰嗦。
@@ -968,6 +969,10 @@ func MustCompile(str string) *Regexp {
 
 千锋Go语言的学习群：784190273
 
+作者B站：
+
+https://space.bilibili.com/353694001
+
 对应视频地址：
 
 https://www.bilibili.com/video/av56018934
@@ -976,4 +981,4 @@ https://www.bilibili.com/video/av47467197
 
 源代码：
 
-https://github.com/rubyhan1314/go_foundation
+https://github.com/rubyhan1314/go_advanced

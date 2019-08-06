@@ -1,6 +1,7 @@
 # 一、集合(Map)
 
 > @author：韩茹
+> 
 > 版权所有：北京千锋互联科技有限公司
 
 ## 1.1 什么是Map
@@ -216,9 +217,11 @@ Person salary changed map[steve:12000 jamie:15000 mike:18000]
 
 
 
-
-
 千锋Go语言的学习群：784190273
+
+作者B站：
+
+https://space.bilibili.com/353694001
 
 对应视频地址：
 

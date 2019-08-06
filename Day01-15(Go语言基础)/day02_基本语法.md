@@ -1,6 +1,7 @@
 # 基本语法——变量
 
 > @author：韩茹
+>
 > 版权所有：北京千锋互联科技有限公司
 
 ## 一、变量的使用
@@ -297,9 +298,17 @@ func main() {
 
 
 
+
+
 千锋Go语言的学习群：784190273
 
+作者B站：
+
+https://space.bilibili.com/353694001
+
 对应视频地址：
+
+https://www.bilibili.com/video/av56018934
 
 https://www.bilibili.com/video/av47467197
 
