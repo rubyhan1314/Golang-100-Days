@@ -25,11 +25,11 @@
 
 数据库(database)就是存储数据的仓库。为了方便数据的存储和管理，将数据按照特定的规律存储在磁盘上。通过数据库管理系统，有效地组织和管理存储在数据库中的数据。
 
-**数据库（database）**是按照数据结构来组织、存储和管理数据的仓库（通常是一个文件或一组文件）。
+**数据库database**是按照数据结构来组织、存储和管理数据的仓库(通常是一个文件或一组文件)。
 
 理解数据库的一种最简单的办法就是将其想象为一个文件柜，此文件柜是一个存放数据的物理位置。
 
-> 注意：有些人通常使用**数据库**这个术语来代表他们使用的**数据库软件**，这是不正确的。确切的说，数据库软件应称为**DBMS（数据库管理系统）**。**数据库**是通过**DBMS**创建和操纵的容器。**数据库**可以是保存在硬件设备上的文件，但也可以不是。对我们来说**数据库**究竟是文件还是其他什么东西并不重要，因为我们并不直接访问**数据库**，我们使用的是**DBMS**，它替我们访问数据库。
+> 注意：有些人通常使用**数据库**这个术语来代表他们使用的**数据库软件**，这是不正确的。确切的说，数据库软件应称为**DBMS(数据库管理系统)**。**数据库**是通过**DBMS**创建和操纵的容器。**数据库**可以是保存在硬件设备上的文件，但也可以不是。对我们来说**数据库**究竟是文件还是其他什么东西并不重要，因为我们并不直接访问**数据库**，我们使用的是**DBMS**，它替我们访问数据库。
 
 ![](img/mysql6.jpg)
 
@@ -57,7 +57,7 @@
 
 ### 2.1、关系型数据库的介绍
 
-关系型数据库模型是把复杂的数据结构归结为简单的二元关系（即二维表格形式）。
+关系型数据库模型是把复杂的数据结构归结为简单的二元关系(即二维表格形式)。
 
 在关系型数据库中，对数据的操作几乎全部建立在一个或多个关系表格上，通过对这些关联的表格分类、合并、连接或选取等运算来实现数据库的管理。
 
@@ -65,7 +65,7 @@
 
 #### 2.1.1 表
 
-> > **表（table）**是数据库中存储数据的基本单位。
+> > **表(table)**是数据库中存储数据的基本单位。
 >
 > ![img](img/emp_table.jpeg)
 >
@@ -74,29 +74,29 @@
 
 ####  2.1.2 列
 
-> **列（column）**表中的一个字段。所有的表都是由一个或多个列组成。
+> **列(column)**表中的一个字段。所有的表都是由一个或多个列组成。
 
 #### 2.1.3 数据类型
 
-> **数据类型（datatype）**每个列都有相应的数据类型，用来限制该列存储的数据。
+> **数据类型(datatype)**每个列都有相应的数据类型，用来限制该列存储的数据。
 
 #### 2.1.4 行
 
-> 行（row）表中的一个（行）记录。
+> 行(row)表中的一个(行)记录。
 
  表中的数据是按行存储的，所保存的每个记录存储在自己的行内，如果将表想象为网格，网格中垂直的列为表列，水平行为表行。
 
 #### 2.1.5 主键
 
-> 主键（primary key）一列（或一组列），其值能够唯一区分表中的每一行。
+> 主键(primary key)一列(或一组列)，其值能够唯一区分表中的每一行。
 
- 表中每一行都应该有可以唯一标识自己的一列（或一组列）。一个顾客表中可以使用顾客编码列，而订单表可以使用订单ID等。一个表中没有主键的话，更新或删除表中特定行很困难，因为没有安全的方法保证只涉及相关的行。
+ 表中每一行都应该有可以唯一标识自己的一列(或一组列)。一个顾客表中可以使用顾客编码列，而订单表可以使用订单ID等。一个表中没有主键的话，更新或删除表中特定行很困难，因为没有安全的方法保证只涉及相关的行。
 
 **主键的规则**表中的任何列都可以作为主键，只要它满足一下条件：
 
-- 任何两行都不具有相同的主键值（每一行的主键值是唯一的）。
+- 任何两行都不具有相同的主键值(每一行的主键值是唯一的)。
 
-- 每个行都必须具有一个主键值（主键不允许null值）
+- 每个行都必须具有一个主键值(主键不允许null值)
 
   **主键的好习惯**除了强制的规则外，应该坚持的几个普遍认可的好习惯：
 
@@ -181,11 +181,11 @@ dos命令行：(需要以管理员的方式运行cmd.exe)
 [扩展]数据库的几个名词
 
 ```
-DB：是指datebase（数据库）
+DB：是指datebase(数据库)
 	数据库是存储数据的一个集合，数据库中通常使用数据表等组成，而数据表是由数据的字段和数据的值等信息组成。
-DBMS:是指datebase mangement systerm（数据库管理系统）
+DBMS:是指datebase mangement systerm(数据库管理系统)
 	它是操作数据库和管理数据库的一个系统，比如mysql、sqlserver等都是属于数据库管理软件，人们通过这些系统或者工具来管理数据库内的数据。
-DBS:是指datebase systerm (数据库系统）
+DBS:是指datebase systerm (数据库系统)
 	数据库系统又数据库和数据库管理软件等组成，数据库是一个逻辑上的存储数据的概念，而对应的是实体是数据库管理软件存储存储在硬盘上的数据库，所以数据库系统包含数据库和数据库管理软件。
 ```
 理解数据库：
@@ -205,7 +205,7 @@ DBS:是指datebase systerm (数据库系统）
 
 ### 1.1 什么是SQL
 
-SQL是结构化查询语言（Structured Query Language）
+SQL是结构化查询语言(Structured Query Language)
 
 ### 1.2 SQL的作用
 
@@ -223,10 +223,10 @@ SQL是结构化查询语言（Structured Query Language）
 
 > SQL99
 >
-> （1）是操作所有关系型数据库的规则 
-> （2）是第四代语言 
-> （3）是一种结构化查询语言 
-> （4）只需发出合法合理的命令，就有对应的结果显示
+> (1)是操作所有关系型数据库的规则 
+> (2)是第四代语言 
+> (3)是一种结构化查询语言 
+> (4)只需发出合法合理的命令，就有对应的结果显示
 
 注意，某种DBMS不只会支持SQL标准，而且还会有一些自己独有的语法，比如limit语句只在MySQL中可以使用
 
@@ -242,25 +242,25 @@ SQL是结构化查询语言（Structured Query Language）
 
 ### 1.5 SQL99标准的四大分类 ： 
 
-1. DDL数据定义语言（data definition language）
+1. DDL数据定义语言(data definition language)
 
    ​	create table,alter table，drop table，truncate table 。。
 
-2. DML数据操作语言（Data Manipulation Language）
+2. DML数据操作语言(Data Manipulation Language)
 
    ​	insert,update,delete 
 
-3. DQL数据查询语言（data query language）
+3. DQL数据查询语言(data query language)
 
    select
 
    其实DQL也从DML中分离出来的。
 
-4. DCL数据控制语言（Data Control Language）
+4. DCL数据控制语言(Data Control Language)
 
    ​	grant 权限 to scott，revoke 权限 from scott 。。。 
 
-5. DCL（事务控制语言）：commit，rollback，rollback to savepoint 。。。
+5. DCL(事务控制语言)：commit，rollback，rollback to savepoint 。。。
 
    
 
@@ -359,7 +359,7 @@ drop database [if exists]数据库名;
 
 ### 2.10 [扩展]MySQL添加用户、删除用户与授权
 
-DCL数据控制语言（Data Control Language）(了解)
+DCL数据控制语言(Data Control Language)(了解)
 
 通常一个项目创建一个用户。一个项目对应的数据库只有一个，这个用户只能对这个数据库有权限，无法对其他数据库进行操作。
 
@@ -404,13 +404,13 @@ mysql>exit;
 
 mysql>登录成功
 
-####2.为用户授权
+#### 2.为用户授权
 
 ```mysql
 授权格式：grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";
 ```
 
-2.1 登录MYSQL（有ROOT权限），这里以ROOT身份登录：
+2.1 登录MYSQL(有ROOT权限)，这里以ROOT身份登录：
 
 @>mysql -u root -p
 
@@ -420,7 +420,7 @@ mysql>登录成功
 
 mysql>CREATE DATABASE`testDB`DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-2.3 授权test用户拥有testDB数据库的所有权限（某个数据库的所有权限）：
+2.3 授权test用户拥有testDB数据库的所有权限(某个数据库的所有权限)：
 
 ```sql
 格式：grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";
@@ -449,7 +449,7 @@ mysql>grant select,delete,update,create,drop on_._to test@"%" identified by "123
 
 ```
 
-//@"%" 表示对所有非本地主机授权，不包括localhost。（localhost地址设为127.0.0.1，如果设为真实的本地地址，不知道是否可以，没有验证。）
+//@"%" 表示对所有非本地主机授权，不包括localhost。(localhost地址设为127.0.0.1，如果设为真实的本地地址，不知道是否可以，没有验证。)
 
 //对localhost授权：加上一句grant all privileges on testDB.* to test@localhost identified by '1234';即可。
 
@@ -809,7 +809,7 @@ alter table stu modify sname  varchar(20) not null;
 
 ### 6.3 唯一性约束：unique
 
-  唯一性约束强调所在的字段所有的数值都是唯一的。不允许重复。允许空值（多个）。
+  唯一性约束强调所在的字段所有的数值都是唯一的。不允许重复。允许空值(多个)。
 
 ```mysql
 create table stu (
@@ -909,7 +909,7 @@ alter table stu modify sid  int;
 
 
 
-###6.5 外键约束：foreign key，
+### 6.5 外键约束：foreign key，
 
 #### 6.5.1外键
 
@@ -990,8 +990,8 @@ alter table student drop foreign key stu_classno;
 
 
 - 级联操作的类型包括：
-  - restrict（限制）：默认值，抛异常
-  - cascade（级联）：如果主表的记录删掉，则从表中相关联的记录都将被删除
+  - restrict(限制)：默认值，抛异常
+  - cascade(级联)：如果主表的记录删掉，则从表中相关联的记录都将被删除
   - set null：将外键设置为空
   - no action：什么都不做
 
