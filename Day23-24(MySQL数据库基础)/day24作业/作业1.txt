@@ -1,0 +1,114 @@
+一。创建表
+1.student表
+sno,学号
+sname，姓名
+sex，性别
+dept，系别
+birth，生日
+age，年龄
+phoen，电话
+
+
+2.course表
+cno，课程编号
+cname，课程名称
+credit，学分
+
+3.cs选课表
+sno，学号
+cno，课程编号
+cj，成绩
+
+二。插入数据
+
+三。查询
+1.--查询张三的考试成绩
+select cno,cj from cs where sno=(select sno  from student where sname='张三
+');
+2.--查询所有男同学的考试成绩
+select * from cs where sno in (select sno from student where sex='男');
+
+3.--查询所有法学课考试成绩
+select * from cs where cno=(select cno from course where cname='法学')
+
+4.--查询选修java课程的学生姓名
+select sname from student where sno in (select sno from cs where cno=(select cno from course where cname='JAVA'))
+
+5.--查询低于80分的所有同学的姓名和系名
+select sname,sdept from student where sno in (select sno from cs where
+ cj<80);
+
+6.--查询选修2号课程并且考试成绩在90分以上的学生姓名、学号
+select sname,sno from student where sno in (select sno from cs where 
+cno = 2 and cj > 90);
+
+7.--查询与'于婷'在同一系的同学信息
+select * from student where sdept=(select sdept from student where 
+sname ='于婷');
+
+8.--查询其他系中比计算机系任意一个学生的年龄小的学生信息
+select * from student where sno in (select sno from student where sdept <>
+'计算机系' and sage < ALL  (select sage from student 
+where sdept = '计算机系'));
+
+9.--查询信息系中比平均年龄低的所有学生信息
+select * from student where sdept ='信息系' and 
+sage < (select avg(sage) from student);
+
+10.--查询没有选修3号课程的所有学生
+select *　from student where sno not in (select sno from cs where cno = 3); 
+
+
+
+
+答案：
+1.创建表
+表一：student，学生表
+CREATE TABLE student(--student
+ sno NUMBER(4) PRIMARY KEY,--学生编号
+ sname VARCHAR(20) NOT NULL,--学生姓名
+ sex VARCHAR(4) CONSTRAINT SEX CHECK (SEX='男' or sex='女'),--学生性别
+ dept varchar(20) CONSTRAINT  DEPT CHECK(DEPT IN ('信息系','计算机科学系','数学系','管理系','中文系','外语系','法学系')),--系别
+ brith date ,--生日
+ age number(2) CONSTRAINT AGE CHECK (AGE BETWEEN 1 AND 100),--年龄
+ phone NUMBER(11)
+)
+表二：course，课程表
+CREATE TABLE  COURSE (--course
+ cno NUMBER(4) PRIMARY KEY,--课程编号
+ cname VARCHAR(20) NOT NULL,--课程名称
+ credit NUMBER(2)--学分
+ credit
+)
+标三：cs，选课表
+
+
+2.插入数据
+
+INSERT INTO STUDENT VALUES (001,'张三','男','信息系','1-3月-1990',20,'13823451234');
+insert into STUDENT values(002,'于洋','男','法学系','15-7月-1994',23,13171254631);
+insert into STUDENT values(003,'余婷','女','外语系','3-9月-1995',22,15815674123);
+insert into STUDENT values(004,'任亮','男','管理系','22-2月-1997',20,13214567125);
+insert into STUDENT values(005,'高亮','男','数学系','26-8月-1995',22,15012387953);
+insert into STUDENT values(006,'张婷','女','计算机科学系','26-8月-1995',22,15012567953);
+insert into STUDENT values(007,'黎明','男','计算机科学系','26-8月-1995',18,15012567900);
+
+
+INSERT INTO COURSE VALUES(001,'数学',4);
+INSERT INTO COURSE VALUES(002,'英语',2);
+INSERT INTO COURSE VALUES(003,'JAVA',3);
+INSERT INTO COURSE VALUES(004,'管理学',3);
+INSERT INTO COURSE VALUES(005,'法学',3);
+INSERT INTO COURSE VALUES(006,'SQL',3);
+
+
+INSERT INTO CS VALUES(1,3,87);
+INSERT INTO CS VALUES(2,4,67);
+INSERT INTO CS VALUES(5,1,66);
+INSERT INTO CS VALUES(4,2,95);
+INSERT INTO CS VALUES(3,3,58);
+INSERT INTO CS VALUES(4,5,90);
+INSERT INTO CS VALUES(1,2,90);
+
+
+

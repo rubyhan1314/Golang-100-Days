@@ -1,0 +1,203 @@
+一、简单查询
+练习1：求所有员工的员工姓名，以及工资的1.1倍显示。
+练习2：求所有员工的年薪
+练习3：求所有员工的年收入
+
+
+二、条件查询
+练习1：查询工资大于1500的员工信息
+练习2：查询工作种类为clerk的员工信息
+练习3：查询姓名为king的员工信息
+练习4：查询编号为7788的员工信息
+练习5：查询1981年之后入职的员工信息
+
+
+练习1：查询工资在2000到3000之间的员工信息
+练习2：查询工资少于2000或者工资大于3000的员工信息
+练习3：查询部门编号是30，并且工资大于2000的员工信息
+练习4：查询20部门的销售，或者是工资大于3000的员工信息
+
+练习1：查询姓名中以s开头的员工信息
+练习2：查询名字中包含字母o的员工信息
+练习3：查询名字中第二个字母为A的员工信息
+练习4：查询名字中最后一个字母为N或D的员工信息
+练习5：查询名字以J开头，长度为4的员工信息
+练习6：查询名字以j开头或以m开头的员工信息
+练习7：查询81年入职的员工信息
+
+练习8：查询名字不以s开头的员工信息
+练习9：不是81年入职
+
+
+
+
+
+练习1：在emp表中，使用in关键字查询职务为”president”,”manager”和”analyst”中任意一种的员工信息。
+练习2：查询部门编号deptno为10,20的员工信息
+练习3：查询工资sal为3000,5000,8000的员工信息
+练习4：查询名字ename为SCOTT,KING,JONES的员工信息
+
+
+练习5：在emp表中，使用in关键字查询职务不是”president”,”manager”和”analyst”中任意一种的员工信息。
+练习6：查询部门编号deptno不是10,20的员工信息
+
+练习7：在emp表中，使用”between and”关键字查询工资在2000到3000之间的员工信息
+练习8：查询奖金在500-1000之间的员工信息
+练习9：查询入职时间在81年4月到9月之间入职的员工信息
+练习10：查询年收入在20000到30000之间的员工信息。
+	
+练习11：检索出所有没有comm的员工信息
+
+
+
+
+练习1：按照奖金排序降序
+练习2：按照员工编号升序排序
+练习3：按照入职日期排序
+练习4：按照deptno升序排序,部门编号相同按照工资降序
+练习5：按照员工工作排序，工作相同的按照工资降序。
+练习6：查询工作是clerk的员工并按照薪资降序排列:
+练习7：查询部门编号是30或者是10的，并且主管是7839的员工并按照雇佣日期排序
+练习8：查询没有绩效的所有员工信息并按照薪水降序排列
+
+
+
+
+
+三、聚合函数
+练习1：求emp表中的工资总额，平均工资，最高工资，最低工资，人数
+
+练习2：求emp表中部门编号为20的，平均工资，工资总和，最高工资，最低工资，人数。
+
+
+四、分组
+
+练习1：求每个部门的人数
+练习2：统计1981年以后入职的，每个部门的人数
+练习3：统计每个管理者，管理的人数。
+练习4：按照部门和工作分组。
+
+
+
+五、多表联查
+练习1：查询员工信息，员工号，姓名，月薪，部门名称。
+练习2：查询员工工资等级，员工号，姓名，月薪,工资等级
+练习3：查询没有提成的员工属于哪个部门，显示部门名称
+练习4：查询部门在纽约的员工，显示员工姓名、员工部门名称、员工的工资,员工的工资等级
+
+
+
+
+
+
+14条语句：
+student：
+	id，name，age，sex
+id	name	age	sex
+1001	王二狗	18	男
+1002	李小花	19	女
+1003	rose	18	女
+1004	jack	20	男
+1005	陈聪	19	男
+
+
+	分组：group by，按照某列来分组，那么分为几组，取决于该列的数值。
+
+sex：
+	男：
+		1001,1004,1005
+	女：
+		1002,1003
+
+age：
+	18：
+		1001,1003
+	19：
+		1002,1005
+	20：
+		1004
+
+name：
+	
+	sql语句中，如果存在分组，统计函数：sum(),avg(),max(),min()。。。分组后再统计
+
+
+练习1：查询所有的部门，以及对应的员工信息。
+
+
+
+练习2：查询每个员工的员工信息，工资等级。emp，salgrade
+
+
+select e.*,s.*
+
+from emp e
+
+left outer join salgrade s
+
+on e.sal >= s.losal and e.sal <= s.hisal
+
+或
+on e.sal between s.losal and s.hisal
+
+
+
+练习3：查询每个员工的员工信息，部门名称，部门位置，工资等级
+
+
+
+select e.*,s.*
+
+from emp e
+
+left outer join salgrade s
+
+on e.sal >= s.losal and e.sal <= s.hisal
+
+或
+on e.sal between s.losal and s.hisal
+
+
+select e.*,s.*,d.* 
+
+from emp e,salgrade s,dept d 
+
+where e.sal between s.losal and s.hisal and e.deptno=d.deptno;
+
+
+结果：
+mysql> select e.empno,e.ename,e.job,e.sal,e.comm,s.*,d.* from emp e,dept d,salgrade s where e.sal between s.losal and s.hisal and e.deptno=d.deptno;
+
+select e,*,d.*,s.*
+from emp e
+left outer join dept d on e.deptno=d.deptno
+
+left outer join salgrade s on ....
+
+
+
+
+练习4：查询在部门在纽约的员工信息，部门名称，工资等级。
+mysql> select e.empno,e.ename,e.job,e.sal,e.comm,s.*,d.* from emp e,dept d,salgrade s where e.sal between s.losal and s.hisal and e.deptno=d.deptno and d.loc='纽约';
+
+
+
+
+
+
+
+
+练习5：查询每个部门的人数，部门名称，部门编号。
+
+
+
+mysql> select d.deptno,d.dname,count(e.empno)  from emp e right outer join dept d on e.deptno=d.deptno group by e.deptno;
+
+
+
+
+
+
+
+
+
