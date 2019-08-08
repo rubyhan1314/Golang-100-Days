@@ -122,7 +122,7 @@
 
 ### 3.3 配置环境变量
 
-![01配置环境变量](img\01配置环境变量.bmp)
+![01配置环境变量](img\01配置环境变量.jpg)
 
 ### 3.4 登陆
 
@@ -132,7 +132,7 @@ mysql -u root -p
 
 输入密码
 
-![02登陆](img\02登陆.bmp)
+![02登陆](img\02登陆.jpg)
 
 >-u：后面跟随用户名
 >
@@ -144,7 +144,7 @@ mysql -u root -p
 
 B：也可以直接使用mysql命令行：
 
-![03登陆](img\03登陆.bmp)
+![03登陆](img\03登陆.jpg)
 
 
 
@@ -156,7 +156,7 @@ dos命令行：(需要以管理员的方式运行cmd.exe)
 
 ​	输入：net start mysql
 
-![ 05停止和启动服务](img\05停止和启动服务.bmp)
+![ 05停止和启动服务](img\05停止和启动服务.jpg)
 
 或者通过操作界面：我的电脑-管理-服务-开启和停止mysql服务。
 
@@ -164,17 +164,17 @@ dos命令行：(需要以管理员的方式运行cmd.exe)
 
 ### 4.1 安装并注册
 
-![05管理工具](img\05管理工具.bmp)
+![05管理工具](img\05管理工具.jpg)
 
 
 
 ### 4.2 创建连接
 
-![04管理工具](img\04管理工具.bmp)
+![04管理工具](img\04管理工具.jpg)
 
 
 
-![06使用navicat](img\06使用navicat.bmp)
+![06使用navicat](img\06使用navicat.jpg)
 
 
 
@@ -588,7 +588,7 @@ create table student(id int auto_increament primary key, name varchar(16) not nu
 create table test_table( test_id INT NOT NULL AUTO_INCREMENT, test_title VARCHAR(100) NOT NULL, test_author VARCHAR(40) NOT NULL DEFAULT 'larry', test_date DATE, PRIMARY KEY ( test_id ) );
 ```
 
-![07建表](img/07建表.bmp)
+![07建表](img/07建表.jpg)
 
 
 
