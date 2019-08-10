@@ -8,6 +8,8 @@
 >
 > 创作不易，感谢大家的支持。如果看后觉得有收获，可以打赏请作者喝咖啡吧，如果有疑问可以进群讨论。
 >
+> 同时我们还搭建了一个网站：https://www.qfgolang.com/，欢迎来踩。。
+>
 > 
 
 
@@ -15,6 +17,10 @@
 ![WechatIMG723_meitu_1](img/WechatIMG724_meitu_2.jpg)
 
 
+
+网站内容，随时更新。。
+
+![WX20190810-104856](/Users/ruby/Documents/hanru/img/WX20190810-104856.png)
 
 ### Go语言应用领域和就业分析
 
