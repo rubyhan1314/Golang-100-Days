@@ -279,7 +279,14 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 
   
 
-#### Day17 - [并发编程Goroutine](./goon.md)
+#### Day17 - [并发编程Goroutine](./Day16-20(Go语言基础进阶)/day17_Go语言并发Goroutine.md)
+
+- 并发编程  - 什么是并发 / 什么是并行 / 什么是串行
+- 多任务的实现 - 进程 / 线程 / 协程
+- Go语言并发 - Goroutine / Go语言并发模型
+- runtime包 
+- 临界资源安全问题 - 同步机制 / Channel通道
+- sync包 - WaitGroup / Mutex互斥锁 / RWMutex读写锁
 
 #### Day18 - [通道Channel](./goon.md)
 #### Day19 - [反射机制](./goon.md)
