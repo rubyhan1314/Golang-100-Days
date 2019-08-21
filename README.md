@@ -288,8 +288,18 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 - 临界资源安全问题 - 同步机制 / Channel通道
 - sync包 - WaitGroup / Mutex互斥锁 / RWMutex读写锁
 
-#### Day18 - [通道Channel](./goon.md)
+#### Day18 - [通道Channel](./Day16-20(Go语言基础进阶)/day18_channel通道.md)
+
+- channel通道  - 什么是channel / 什么是goroutine之间的通信 / 
+- chan的语法 - chan的声明和创建 / chan关联的数据类型 / 读取数据 / 写出数据 / for 访问chan / chan的关闭
+- chan的注意点 - chan的使用注意事项 / chan的读写是阻塞的 / 死锁等
+- chan的类型 - 缓冲chan和非缓冲chan / 单向chan和双向chan
+- time包相关 - NewTimer() / Stop() / After()等
+- select语句 - select语句结合chan / select语句结合time包相关函数 / select语句的注意点
+- CSP模型 - CSP模型的概念 /Go语言中的CSP模型等 
+
 #### Day19 - [反射机制](./goon.md)
+
 #### Day20 - [综合练习](./goon.md)
 
 ### Day21~22 - [网络编程](./Day21-22(网络编程))
