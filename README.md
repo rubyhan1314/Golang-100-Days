@@ -290,7 +290,7 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 
 #### Day18 - [通道Channel](./Day16-20(Go语言基础进阶)/day18_channel通道.md)
 
-- channel通道  - 什么是channel / 什么是goroutine之间的通信 / 
+- channel通道  - 什么是channel / 什么是goroutine之间的通信 
 - chan的语法 - chan的声明和创建 / chan关联的数据类型 / 读取数据 / 写出数据 / for 访问chan / chan的关闭
 - chan的注意点 - chan的使用注意事项 / chan的读写是阻塞的 / 死锁等
 - chan的类型 - 缓冲chan和非缓冲chan / 单向chan和双向chan
@@ -298,7 +298,15 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 - select语句 - select语句结合chan / select语句结合time包相关函数 / select语句的注意点
 - CSP模型 - CSP模型的概念 /Go语言中的CSP模型等 
 
-#### Day19 - [反射机制](./goon.md)
+#### Day19 - [反射机制](./Day16-20(Go语言基础进阶)/day19_Go语言反射.md)
+
+- 反射 - 反射的引入 / 反射的概念 
+- 反射相关基础知识 - 静态语言 / 空接口interface{} / go语言类型的特点
+- Type和Value - 反射中的Type / 反射中的Value
+- 反射的三大定律 - 从接口值得到反射对象 / 从反射对象获取接口值 / 可以修改反射变量前提是其值必须可以修改
+- 反射的使用 - 获取接口的信息 / 设置实际变量的值 / 通过反射进行方法调用
+
+
 
 #### Day20 - [综合练习](./goon.md)
 
