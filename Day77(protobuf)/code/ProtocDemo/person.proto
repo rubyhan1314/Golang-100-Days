@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package example;
+
+message Person {
+    required string Name = 1;
+    required int32 Age = 2;
+    required string From = 3;
+    optional Address Addr = 4;
+    message Address {
+        required sint32 id = 1 [default = 1];
+        required string name = 2 [default = '北京'];
+        optional string pinyin = 3 [default = 'beijing'];
+        required string address = 4;
+        required bool flag = 5 [default = true];
+    }
+}

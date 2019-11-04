@@ -1,0 +1,20 @@
+syntax = "proto3";
+package message;
+
+//订单请求参数
+message OrderRequest {
+    string orderId = 1;
+    int64 timeStamp = 2;
+}
+
+//订单信息
+message OrderInfo {
+    string OrderId = 1;
+    string OrderName = 2;
+    string OrderStatus = 3;
+}
+
+//订单服务service定义
+service OrderService {
+    rpc GetOrderInfos (OrderRequest) returns (stream OrderInfo) {}; //服务端流模式
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+package message;
+
+
+message RequestArgs {
+    int32 args1 = 1;
+    int32 args2 = 2;
+}
+
+message Response {
+    int32 code = 1;
+    string message = 2;
+}
+
+//服务
+service MathService {
+    //服务
+    rpc AddMethod (RequestArgs) returns (Response) {
+    };
+}

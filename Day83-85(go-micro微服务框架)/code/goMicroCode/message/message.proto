@@ -1,0 +1,20 @@
+syntax = 'proto3';
+package message;
+
+//学生数据体
+message Student {
+    string name = 1; //姓名
+    string classes = 3; //班级
+    int32 grade = 4; //分数
+}
+
+//请求数据体定义
+message StudentRequest {
+    string name = 1;
+}
+
+//学生服务
+service StudentService {
+    //查询学生信息服务
+    rpc GetStudent (StudentRequest) returns (Student);
+}

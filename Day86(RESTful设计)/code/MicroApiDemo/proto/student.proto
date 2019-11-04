@@ -1,0 +1,18 @@
+syntax = 'proto3';
+
+package proto;
+
+message Student {
+    string id = 1;
+    string name = 2;
+    int32 grade = 3;
+    string classes = 4;
+}
+
+message Request {
+    string name = 1;
+}
+
+service StudentService {
+    rpc GetStudent (Request) returns (Student);
+}

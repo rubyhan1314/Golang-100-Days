@@ -1,0 +1,8 @@
+syntax = "proto2";
+package example;
+
+message Order{
+    required int32 order_id = 1;//1代表字段顺序
+    optional int64 num = 2;
+    optional string timestamp = 3;
+}
