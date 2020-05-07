@@ -85,7 +85,7 @@ Iris框架中文学习文档： [https://studyiris.com/doc/](https://studyiris.c
 
 ### 2.4 Iris框架安装
 #### 2.4.1 Go版本限制
-**环境要求：**iris框架要求golang版本至少为1.8。各位同学可以通过打开终端，执行：go version 命令来查看自己机器的go环境版本。 
+**环境要求：**iris框架要求golang版本至少为1.13。各位同学可以通过打开终端，执行：go version 命令来查看自己机器的go环境版本。 
 #### 2.4.2 命令安装
 安装Iris框架非常简单，使用go语言的全局安装第三方代码的命令get即可。安装Iris框架的命令如下：    
 ```  
