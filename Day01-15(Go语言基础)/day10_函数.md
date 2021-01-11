@@ -266,8 +266,8 @@ func ReadWrite() bool {
     defer file.Close()
     if failureX {
           return false
-    } i
-    f failureY {
+    } 
+    if failureY {
           return false
     } 
     return true
