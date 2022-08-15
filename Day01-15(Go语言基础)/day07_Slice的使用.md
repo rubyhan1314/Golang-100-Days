@@ -312,7 +312,7 @@ func printSlice(x []int){
 len=0 cap=0 slice=[]
 len=1 cap=2 slice=[0]
 len=2 cap=2 slice=[0 1]
-len=5 cap=8 slice=[0 1 2 3 4]
+len=5 cap=6 slice=[0 1 2 3 4]
 len=5 cap=12 slice=[0 1 2 3 4]
 ```
 
